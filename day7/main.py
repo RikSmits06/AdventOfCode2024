@@ -1,5 +1,3 @@
-from itertools import permutations
-
 equations = open("input.txt", "r").read().split("\n")
 
 

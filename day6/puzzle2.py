@@ -69,7 +69,9 @@ def solve(map):
         nextX = x + dx
         nextY = y + dy
 
-        if steps > WIDTH * HEIGHT:
+        # If it is bigger than 4 it means at least 1 direction has been travelled multiple times meaning the same result will be achieved.
+        # Thus it is stuck in a loop.
+        if cells[y * WIDTH + x].visitCounter > 4:
             return False
 
         if not inbound(nextX, nextY):
