@@ -37,7 +37,7 @@ def blink(stones: dict):
     return ret
 
 
-blinks = 75
+blinks = 1000
 while blinks > 0:
     stones = blink(stones)
     blinks -= 1
